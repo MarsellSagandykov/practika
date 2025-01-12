@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Философия образования</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sidebar {
+            background-color: #d2e8ff;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .sidebar button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 90%;
+            border: none;
+            background-color: #ffffff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .sidebar button:hover {
+            background-color: #b0d4ff;
+        }
+
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #f5f5f5;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .info-section {
+            background-color: #f0f0f0;
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <p>
+		Логотип
+		</p>
+        <button onclick="window.location.href='/'">
+		Главная
+		</button>
+        <button onclick="window.location.href='/form'">
+		Анкета
+		</button>
+        <button onclick="window.location.href='/info'">
+		Инфо
+		</button>
+        <button onclick="window.location.href='/analysis'">
+		Анализ
+		</button>
+        <button onclick="window.location.href='/login'">
+		Вход
+		</button>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+		Философия образования
+		</div>
+	<div class="main">
+		<div class="content">
+			<h2>Инструкция для извлечения </h2>
+				<p>1)	Введите в форму текст.</p>
+				<br>
+				<p>2)	Нажмите конпку "извлечь"</p>
+				<br>
+				<p>3)	Введите текст:</p>
+				<br>
+			<form action = "extract" method = "post">
+			<div class="form-group">
+				<textarea input class="form-control"  name = txt id="exampleFormControlTextarea1" placeholder="Введите текст" placeholder=".form-control-lg" cols = 80 rows="10"></textarea>
+				
+			</div>
+			<input type = "submit" name = "submit" value = "Извлечь">
+
+			</form>
+			<br>
+		</div>
+    </div>
+</body>
+</html>
+
